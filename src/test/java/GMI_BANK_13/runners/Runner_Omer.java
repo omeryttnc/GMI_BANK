@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
-        glue = "GMI_BANK_13/stepdefinitions",
-       // tags = "@db",
+        glue = "GMI_BANK_13/stepdefitions",
+        tags = "@login",
         dryRun = false
 )
 public class Runner_Omer {
