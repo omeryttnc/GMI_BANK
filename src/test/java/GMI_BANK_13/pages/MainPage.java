@@ -52,13 +52,13 @@ public class MainPage {
     @FindBy(xpath = "(//div/a[@class='dropdown-item'])[2]")
     public WebElement register;
 
-    @FindBy(xpath = "(//input[@name='username']")
+    @FindBy(xpath = "//input[@name='username']")
     public WebElement user_name;
 
-    @FindBy(xpath = "(//input[@name='password']")
+    @FindBy(xpath = "//input[@name='password']")
     public WebElement password;
 
-    @FindBy(linkText = "submit")
+    @FindBy(xpath = "(//div[@class='modal-footer']/button)[2]")
     public WebElement submit_button;
 
 

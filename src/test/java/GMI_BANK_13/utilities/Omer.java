@@ -5,21 +5,14 @@ import org.junit.Test;
 
 public class Omer {
     MainPage mainPage = new MainPage();
+
     @Test
-    public void Sign_In_to_System(String username,String password){
+    public void Sign_In_to_System(String username, String password) {
         Driver.driver.get(ConfigurationReader.getProperty("website"));
         mainPage.login_in_kelkafa.click();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Driver.wait(2);
         mainPage.sign_In.click();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        Driver.wait(2);
 
         mainPage.user_name.sendKeys(username);
         mainPage.password.sendKeys(password);
