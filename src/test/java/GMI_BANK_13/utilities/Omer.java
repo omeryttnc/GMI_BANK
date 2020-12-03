@@ -7,6 +7,7 @@ public class Omer {
     MainPage mainPage = new MainPage();
     @Test
     public void Sign_In_to_System(String username,String password){
+        Driver.driver.get(ConfigurationReader.getProperty("website"));
         mainPage.login_in_kelkafa.click();
         try {
             Thread.sleep(2000);
