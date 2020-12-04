@@ -16,6 +16,7 @@ public class loginAll {
                 ConfigurationReader.getProperty("Customer_password"));
         Driver.wait(2);
     }
+
     @Given("Login in employee account")
     public void Login_in_employee_account() {
 
@@ -23,6 +24,7 @@ public class loginAll {
                 ConfigurationReader.getProperty("Employee_password"));
         Driver.wait(2);
     }
+
     @Given("Login in manager account")
     public void Login_in_manager_account() {
 
@@ -30,6 +32,7 @@ public class loginAll {
                 ConfigurationReader.getProperty("Manager_password"));
         Driver.wait(2);
     }
+
     @Given("Login in admin account")
     public void Login_in_admin_account() {
 
