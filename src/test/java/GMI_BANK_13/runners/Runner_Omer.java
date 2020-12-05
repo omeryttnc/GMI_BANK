@@ -11,8 +11,9 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features",
         glue = "GMI_BANK_13/stepdefitions",
-        tags = "@us14tc01",
-        dryRun = false
+        tags = "@us14tc02",
+        dryRun = false,
+        strict = true
 )
 public class Runner_Omer {
 

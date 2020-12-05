@@ -1,15 +1,14 @@
 package GMI_BANK_13.utilities;
-
 import GMI_BANK_13.pages.MainPage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class Omer {
 
-   private static MainPage mainPage ;
+    private static MainPage mainPage= new MainPage();
 
     public static void Sign_In_to_System(String username, String password) {
-
         Driver.driver.get(ConfigurationReader.getProperty("website"));
         mainPage.login_in_kelkafa.click();
         Driver.wait(2);
@@ -21,14 +20,21 @@ public class Omer {
         mainPage.submit_button.click();
     }
 
-    public static void Dropdown_selecetBy_id(String id, String value) {
-        Select dropdownlist = new Select(Driver.driver.findElement(By.id(id)));
-        dropdownlist.selectByValue(value);
+    public static void Dropdown_selecetBy_id(WebElement id, String value) {
+        WebElement dropdownlist = Driver.driver.findElement(By.id(id.getText()));
+        Select options = new Select(dropdownlist);
+        Driver.wait(2);
+        options.selectByValue(value);
     }
-    public static void Dropdown_selecetBy_classname(String classname,String value) {
-        Select dropdownlist = new Select(Driver.driver.findElement(By.className(classname)));
-        dropdownlist.selectByValue(value);
+
+    public static void Dropdown_selecetBy_classname(String classname, String value) {
+        WebElement dropdownlist = Driver.driver.findElement(By.className(classname));
+        Select options = new Select(dropdownlist);
+        Driver.wait(2);
+        options.selectByValue(value);
+
     }
+
 
     public static void Dropdown_selecetBy_xpath(String xpath, String value) {
         Select dropdownlist = new Select(Driver.driver.findElement(By.xpath(xpath)));
@@ -44,10 +50,12 @@ public class Omer {
         Select dropdownlist = new Select(Driver.driver.findElement(By.cssSelector(cssSelector)));
         dropdownlist.selectByValue(value);
     }
+
     public static void Dropdown_selecetBy_partialLinkText(String partialLinkText, String value) {
         Select dropdownlist = new Select(Driver.driver.findElement(By.partialLinkText(partialLinkText)));
         dropdownlist.selectByValue(value);
     }
+
     public static void Dropdown_selecetBy_tagName(String tagName, String value) {
         Select dropdownlist = new Select(Driver.driver.findElement(By.tagName(tagName)));
         dropdownlist.selectByValue(value);
