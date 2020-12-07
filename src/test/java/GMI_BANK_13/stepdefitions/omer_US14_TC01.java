@@ -10,11 +10,10 @@ public class omer_US14_TC01 {
 
     @Then("Go to my accounts")
     public void go_to_my_accounts() {
-
-        customerPage.my_Operation.click();
-        Driver.wait(2);
         customerPage.my_Accounts.click();
+        Driver.wait(2);
     }
+
 
     @Then("Assert if there is 2nd View Transaction")
     public void assert_if_there_is_2nd_View_Transaction() {
