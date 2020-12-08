@@ -1,6 +1,7 @@
-@registration
+
 Feature: US002_user_wants_to_register_scenario_outline
 
+  @registration
   Scenario Outline: Required_information_was_given_by_user
     Given user is on the website
     When user clicks on user icon
