@@ -8,7 +8,7 @@ Feature: US16
     And Assert if there is 2nd View Transaction
 
   @us14tc02
-  Scenario: Test Case 04
+  Scenario: Test Case 02
     Given Login in customer account
     Then Go to my operations
    Then Go to transfer money
