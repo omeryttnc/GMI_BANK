@@ -1,12 +1,16 @@
 package GMI_BANK_13.utilities;
+
 import GMI_BANK_13.pages.MainPage;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class Omer {
 
-    private static MainPage mainPage= new MainPage();
+    private static MainPage mainPage = new MainPage();
 
     public static void Sign_In_to_System(String username, String password) {
         Driver.driver.get(ConfigurationReader.getProperty("website"));
@@ -60,9 +64,15 @@ public class Omer {
         Select dropdownlist = new Select(Driver.driver.findElement(By.tagName(tagName)));
         dropdownlist.selectByValue(value);
     }
-//    public void alert(){
-//        Alert alert = new Alert();
-//
-//    }
 
+    public static class collect_data {
+        public void collect_all_data(String website, String Locater) {
+            Driver.getDriver().get(ConfigurationReader.getProperty(website));
+            List<WebElement> tableData = Driver.getDriver().findElements(By.xpath(Locater));
+            for (WebElement table : tableData) {
+                System.out.println(table.getText());
+            }
+
+        }
+    }
 }
