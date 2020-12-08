@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.702">
+<testcase classname="US01 Registration Test" name="TC01 Verify that user can register" time="18.812">
+<system-out><![CDATA[Given User navigates to GMI BANK HomePage...................................passed
+Then user clicks to user-icon...............................................passed
+Then user clicks on register button.........................................passed
+Then user fills SSN input box...............................................passed
+Then user fills the firstname and lastname input box........................passed
+Then user fills the address input box.......................................passed
+Then user fills the username input box......................................passed
+Then user fills the mobilePhone input box...................................passed
+And user fills the email input box..........................................passed
+Then user fills the new password and confirmation password..................passed
+Then user clicks on registerSubmit button...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

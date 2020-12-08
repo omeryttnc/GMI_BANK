@@ -1,0 +1,170 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-08T21:35:11.067Z",
+        "line": 3,
+        "name": "TC01 Verify that user can register",
+        "description": "",
+        "id": "us01-registration-test;tc01-verify-that-user-can-register",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15628000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to GMI BANK HomePage",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_navigates_to_GMI_BANK_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks to user-icon",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_clicks_to_user_icon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 300000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_clicks_on_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 396000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user fills SSN input box",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_SSN_input_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 362000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fills the firstname and lastname input box",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_the_firstname_and_lastname_input_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 488000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user fills the address input box",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_the_address_input_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user fills the username input box",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_the_username_input_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user fills the mobilePhone input box",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_the_mobilePhone_input_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 267000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user fills the email input box",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_the_email_input_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 558000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user fills the new password and confirmation password",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_fills_the_new_password_and_confirmation_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on registerSubmit button",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.ilker_stepdefinitions.user_clicks_on_registerSubmit_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      }
+    ],
+    "name": "US01 Registration Test",
+    "description": "",
+    "id": "us01-registration-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Register.feature",
+    "tags": [
+      {
+        "name": "@register",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
