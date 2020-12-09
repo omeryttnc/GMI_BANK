@@ -13,7 +13,6 @@ public class Omer {
 
     public static void Sign_In_to_System(String username, String password) {
         Driver.driver.get(ConfigurationReader.getProperty("website"));
-        Driver.wait(2);
         mainPage.login_in_kelkafa.click();
         Driver.wait(2);
         mainPage.sign_In.click();
