@@ -12,8 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "GMI_BANK_13/stepdefitions",
         tags = "@registration",
-        dryRun = false,
-        strict = true
+        dryRun = false
 )
 public class Runner_Mahmut {
 

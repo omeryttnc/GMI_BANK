@@ -77,12 +77,14 @@ public class MahmutStepDefinitions {
     public void user_clicks_on_the_Register_button() {
         newUserRegistrationPage.registerSubmitButton.click();
     }
-/*
+
     @Then("verify the text message")
     public void verify_the_text_message() {
         Driver.wait(3);
-        String expectedMessage = Driver.getDriver().getTitle();
-        String actualMessage = "abcd";
+        String expectedMessage = ("If you want to sign in, you can try the default accounts:\n" +
+                "- Administrator (login=\"admin\" and password=\"admin\")\n" +
+                "- User (login=\"user\" and password=\"user\")");
+        String actualMessage = newUserRegistrationPage.textMessage.getText();
         Assert.assertEquals(expectedMessage, actualMessage);
-    }  */
+    }
 }

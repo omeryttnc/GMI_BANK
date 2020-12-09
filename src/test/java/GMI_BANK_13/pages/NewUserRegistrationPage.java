@@ -37,7 +37,7 @@ public class NewUserRegistrationPage {
     @FindBy(xpath = "//input[@name='email']")
     public WebElement email;
 
-    @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
+    @FindBy(xpath = "//input[@id='firstPassword']")
     public WebElement newPassword;
 
     @FindBy(xpath = "//input[@name='secondPassword']")
