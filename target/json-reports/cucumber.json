@@ -3,17 +3,28 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-08T21:35:11.067Z",
+        "start_timestamp": "2020-12-09T14:54:01.514Z",
         "line": 3,
         "name": "TC01 Verify that user can register",
         "description": "",
         "id": "us01-registration-test;tc01-verify-that-user-can-register",
+        "after": [
+          {
+            "result": {
+              "duration": 1226000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 15628000000,
+              "duration": 14464000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 122000000,
+              "duration": 77000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 300000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 396000000,
+              "duration": 239000000,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 362000000,
+              "duration": 188000000,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 488000000,
+              "duration": 221000000,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 203000000,
+              "duration": 119000000,
               "status": "passed"
             },
             "line": 11,
@@ -97,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 197000000,
+              "duration": 110000000,
               "status": "passed"
             },
             "line": 12,
@@ -109,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 267000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 13,
@@ -121,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 558000000,
+              "duration": 275000000,
               "status": "passed"
             },
             "line": 14,
@@ -133,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 138000000,
+              "duration": 75000000,
               "status": "passed"
             },
             "line": 15,
