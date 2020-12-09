@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Mahmut {
 
-    public Mahmut(){ }
+    public Mahmut() { }
 
     private static WebDriver driver;
 

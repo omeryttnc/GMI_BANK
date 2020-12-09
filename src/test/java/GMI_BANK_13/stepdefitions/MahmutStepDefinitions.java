@@ -3,6 +3,7 @@ package GMI_BANK_13.stepdefitions;
 import GMI_BANK_13.pages.NewUserRegistrationPage;
 import GMI_BANK_13.utilities.ConfigurationReader;
 import GMI_BANK_13.utilities.Driver;
+import GMI_BANK_13.utilities.Mahmut;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,7 +15,7 @@ public class MahmutStepDefinitions {
 
     @Given("user is on the website")
     public void user_is_on_the_website() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("website"));
+        Mahmut.getDriver().get(ConfigurationReader.getProperty("website"));
     }
 
     @When("user clicks on user icon")

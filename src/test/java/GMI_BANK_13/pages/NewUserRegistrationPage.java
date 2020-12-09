@@ -1,6 +1,6 @@
 package GMI_BANK_13.pages;
 
-import GMI_BANK_13.utilities.Driver;
+import GMI_BANK_13.utilities.Mahmut;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NewUserRegistrationPage {
 
-    public NewUserRegistrationPage() {PageFactory.initElements(Driver.getDriver(), this);}
+    public NewUserRegistrationPage() {PageFactory.initElements(Mahmut.getDriver(), this);}
 
     @FindBy(xpath = "//li[@id='account-menu']")
     public WebElement userIcon;
