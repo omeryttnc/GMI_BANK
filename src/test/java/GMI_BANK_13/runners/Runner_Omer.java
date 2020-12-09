@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "GMI_BANK_13/stepdefitions",
         tags = "@us14tc02",
-        dryRun = false,
+        dryRun = true,
         strict = true
 )
 public class Runner_Omer {
