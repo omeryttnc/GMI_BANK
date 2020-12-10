@@ -1,6 +1,5 @@
 @us08
 Feature: Password segment on Homepage should be editable
-
   Background:
     Given user logs in with user credentials
     Then user navigates to password page

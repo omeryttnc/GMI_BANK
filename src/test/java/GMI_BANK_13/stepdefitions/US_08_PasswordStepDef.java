@@ -78,4 +78,9 @@ public class US_08_PasswordStepDef {
         passwordPage.newPasswordTextBox.sendKeys(string);
     }
 
+    @And("user enters new password in new password confirmation textbox")
+    public void userEntersNewPasswordInNewPasswordConfirmationTextbox() {
+        passwordPage.confirmPasswordTextBox.sendKeys(ConfigurationReader.getProperty("user_password"));
+    }
+
 }
