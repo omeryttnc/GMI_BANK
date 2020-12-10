@@ -4,15 +4,15 @@ import GMI_BANK_13.utilities.ConfigurationReader;
 import GMI_BANK_13.utilities.Driver;
 import GMI_BANK_13.utilities.Omer;
 import io.cucumber.java.en.Given;
-import org.junit.Test;
+import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
 
 public class loginAll {
-    Omer omer = new Omer();
 
     @Given("Login in customer account")
     public void Login_in_customer_account() {
 
-        omer.Sign_In_to_System(ConfigurationReader.getProperty("Customer_username"),
+        Omer.Sign_In_to_System(ConfigurationReader.getProperty("Customer_username"),
                 ConfigurationReader.getProperty("Customer_password"));
         Driver.wait(2);
     }
@@ -20,7 +20,7 @@ public class loginAll {
     @Given("Login in employee account")
     public void Login_in_employee_account() {
 
-        omer.Sign_In_to_System(ConfigurationReader.getProperty("Employee_username"),
+        Omer.Sign_In_to_System(ConfigurationReader.getProperty("Employee_username"),
                 ConfigurationReader.getProperty("Employee_password"));
         Driver.wait(2);
     }
@@ -28,7 +28,7 @@ public class loginAll {
     @Given("Login in manager account")
     public void Login_in_manager_account() {
 
-        omer.Sign_In_to_System(ConfigurationReader.getProperty("Manager_username"),
+        Omer.Sign_In_to_System(ConfigurationReader.getProperty("Manager_username"),
                 ConfigurationReader.getProperty("Manager_password"));
         Driver.wait(2);
     }
@@ -36,8 +36,25 @@ public class loginAll {
     @Given("Login in admin account")
     public void Login_in_admin_account() {
 
-        omer.Sign_In_to_System(ConfigurationReader.getProperty("Admin_username"),
+        Omer.Sign_In_to_System(ConfigurationReader.getProperty("Admin_username"),
                 ConfigurationReader.getProperty("Admin_password"));
         Driver.wait(2);
     }
+
+//    @Then("user enters \"(.*)\" and \"(.*)\"$")
+//    public void user_enters_and(String username, String password) {
+//      Omer.Sign_In_to_System(username,password);
+//      Driver.wait(5);
+@Then("user enters {string} and {string}")
+public void user_enters_and(String username, String password) {
+    Omer.Sign_In_to_System(username,password);
+//      Driver.wait(5);
+}
+
+    @Then("user  {string} and {string}")
+    public void user_and(String string, String string2) {
+        System.out.println(string);
+        System.out.println(string2);
+    }
+
 }

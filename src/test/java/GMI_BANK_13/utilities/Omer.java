@@ -1,7 +1,6 @@
 package GMI_BANK_13.utilities;
 
 import GMI_BANK_13.pages.MainPage;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -14,6 +13,7 @@ public class Omer {
 
     public static void Sign_In_to_System(String username, String password) {
         Driver.driver.get(ConfigurationReader.getProperty("website"));
+        Driver.wait(2);
         mainPage.login_in_kelkafa.click();
         Driver.wait(2);
         mainPage.sign_In.click();

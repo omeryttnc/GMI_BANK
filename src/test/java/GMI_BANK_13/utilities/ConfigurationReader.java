@@ -11,8 +11,8 @@ public class ConfigurationReader {
             FileInputStream file = new FileInputStream(path);
             properties = new Properties();
             properties.load(file);
-        }catch (Exception e) {
-            e.printStackTrace();
+        }catch (Exception e){
+
         }
     }
     public static String getProperty(String key){
