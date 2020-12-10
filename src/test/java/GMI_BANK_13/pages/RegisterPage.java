@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class RegisterPage {
 
     public RegisterPage(){
@@ -48,7 +50,7 @@ public class RegisterPage {
     public WebElement strengthBar;
 
     @FindBy(xpath = "//li[@class='point']") // 5 cell with same xpath
-    public WebElement strengthCell;
+    public List<WebElement> strengthBarCells;
 
     @FindBy(xpath = "//ul[@id='secondPassword']")
     public WebElement secondPassword;

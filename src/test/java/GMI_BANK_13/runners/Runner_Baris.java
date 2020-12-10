@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         "junit:target/xml-report/cucumber.xml"},
         features = "src/test/resources/features/Register.feature",
         glue = "GMI_BANK_13/stepdefitions",
-        //tags = "",
+        //tags = "@with4DifferentChar",
         dryRun = false
 )
 public class Runner_Baris {
