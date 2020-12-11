@@ -10,10 +10,10 @@ public class TransferMoneyPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "fromAccountId")
+    @FindBy(className = "fromAccountId")
     public WebElement from;
 
-    @FindBy(id = "toAccountId")
+    @FindBy(className = "toAccountId")
     public WebElement to;
 
     @FindBy(className = "balance")
