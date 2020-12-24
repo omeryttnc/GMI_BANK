@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.592">
+<testcase classname="Api - update Country test" name="User can just update each country 1 by 1" time="11.902">
+<system-out><![CDATA[Given user provides the api endpoint "/tp-countries"........................passed
+Given user gets all countries...............................................passed
+And user selects country with id and send new "new zeland"..................passed
+]]></system-out>
+</testcase>
+</testsuite>
