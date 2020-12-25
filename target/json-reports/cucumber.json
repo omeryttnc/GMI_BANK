@@ -1,0 +1,106 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Set up the connection",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user provides the api endpoint \"/tp-countries\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/tp-countries\"",
+                  "offset": 31
+                }
+              ],
+              "location": "GMI_BANK_13.stepdefitions.CountriesSD.user_provides_the_api_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-24T00:29:01.624Z",
+        "line": 12,
+        "name": "User can just update each country 1 by 1",
+        "description": "",
+        "id": "api---update-country-test;user-can-just-update-each-country-1-by-1;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 7519000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2976000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user gets all countries",
+            "match": {
+              "location": "GMI_BANK_13.stepdefitions.CountriesSD.user_gets_all_countries()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1292000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user selects country with id and send new \"new zeland\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"new zeland\"",
+                  "offset": 42
+                }
+              ],
+              "location": "GMI_BANK_13.stepdefitions.CountriesSD.user_selects_country_with_id_and_send_new(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@countryUpdate"
+          }
+        ]
+      }
+    ],
+    "name": "Api - update Country test",
+    "description": "",
+    "id": "api---update-country-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US26.feature",
+    "tags": [
+      {
+        "name": "@countryUpdate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
